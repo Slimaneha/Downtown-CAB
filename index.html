@@ -1,0 +1,609 @@
+<!doctype html>
+<html class="no-js" lang="FR">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Downtown Cab</title>
+  <meta name="description" content="Bienvenu sur mon Cv sur ce site vous pouvez voir tout mon parcourt professionnel le site et fais à là main HTML-5 CCS-3 JS par Slimane Hassani !         ">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Lien googles Fonte !! -->
+
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="favicon.ico" />
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+  <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <!-- Images Type  -->
+  <!-- <img src="http://placehold.it/350x150" alt=""> -->
+  <!-- Fin Images Type  -->
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark   ">
+    <a id="titre" class="navbar-brand" href="#"> (Downtown cab)</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <!--      <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Préparation au code </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                  </ul> -->
+
+    </div>
+  </nav>
+
+
+
+
+
+  <!-- Debut Du site feut 1er pages -->
+
+
+  <p class="inputAuto homme display-7"> {Downtown CAB .CO }
+    <footer class="blockquote-footer   " style="font-size: 25px;"> Votre liberté et notre métier
+      <cite title="Source Title">Abdel Hassani </cite>
+    </footer>
+  </p>
+
+
+  <div class="centre">
+
+
+
+
+  </div>
+
+
+  <ul class=" feu flex" style="display: flex;">
+    <li id="rouge">
+      <div class="card text-white bg-dark mb-3 d-inline-block" style="max-width: 30rem;">
+        <div class="card-header">
+          < Taxi>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title"> {Calculer vos courses } </h4>
+          <p class="card-text"> Une balade une courses ? pas de surprises. Calculer vos courses en ligne en 30 Secondes ! </p>
+        </div>
+        <button data-toggle="modal" data-target="#taxi" type="button" class=" btn-carte inputAuto  btn btn-outline-warning">
+          < Accédez>
+        </button>
+      </div>
+
+    </li>
+
+    <li id="orange">
+      <div class="card text-white bg-dark     mb-3 d-inline-block" style="max-width: 30rem;">
+        <div class="card-header">
+          < Auto école>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title"> { Peur de ne pas reussir }</h4>
+          <p class="card-text">Parter avec une longueur d'avance avec nos test d'entraînements et nos cours gratuit en ligne ! </p>
+        </div>
+        <button type="button" data-toggle="modal" data-target="#autoEcole" class=" btn-carte inputAuto   btn btn-outline-warning">
+          < Accédez>
+            </Secondary>
+        </button>
+      </div>
+    </li>
+
+    <li id="vert">
+
+      <div class="card text-white bg-dark mb-3 d-inline-block" style="max-width: 30rem;">
+        <div class="card-header">
+          < INFORMATION>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title"> {Bienvenue à vous } </h4>
+          <p class="card-text">En ce moment Pour tout nouveaux arrivants en villes -20% sur tout vos permis ! </p>
+        </div>
+        <button type="button" class=" btn-carte   btn btn-outline-warning">
+          < Downtown>
+            </Secondary>
+        </button>
+      </div>
+
+
+    </li>
+
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <!-- Partie Auto école -->
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal" id="autoEcole" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-dark ">
+          <h5 class="modal-title " id="exampleModalLabel"> { Auto école } </h5>
+          <br>
+          <p id="points" style="display: none; color: white !important ; ">Points :
+            <strong id="Points"> </strong>
+          </p>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body ">
+
+
+          <!--1er Partie -->
+
+          <div id="autoUn">
+
+            <ul id="listeGeneral" class="flex" style="flex-direction: column;">
+              <li> Répondez a des questions d'entrainement
+                <br>
+                <button class="btn btn-outline-dark btn-carte" onclick="entrainement ()">
+                  < Entrainement>
+                </button>
+              </li>
+              <li> Tout les prix et forfait
+                <br>
+                <button class="btn btn-outline-dark btn-carte" onclick="PrixAuto ()">
+                  < Prix>
+                </button>
+              </li>
+              <li> Vous chercher un empoloi ? nous cherchon des formateur
+                <br>
+                <button class="btn btn-outline-dark btn-carte">
+                  < Recrutement>
+                </button>
+              </li>
+            </ul>
+
+          </div>
+
+
+
+
+
+          <!--Fin 1er partie -->
+
+
+
+          <!--Debut partie 2 entrainement au code -->
+
+
+
+
+          <div id="entrainement" style="display: none;">
+
+            <h4 class="inputAuto"> {Question} </h4>
+            <br>
+
+            <strong style="width: 100%;" id="question"> </strong>
+
+
+            <ul class="listeRep">
+              <li class="bg-danger">A:
+                <strong id="reponcesUn"></strong>
+              </li>
+              <li class="bg-warning">B:
+                <strong id="reponces2"></strong>
+              </li>
+              <li class="bg-success">C:
+                <strong id="reponces3"></strong>
+              </li>
+            </ul>
+
+            <form>
+              <label class="inputAuto"> [Mettre Uniquement la lettre A B ou C ] </label>
+              <input id="formAuto" class="form-control form-control-lg" type="text" placeholder="A B C">
+
+            </form>
+
+
+
+
+
+
+          </div>
+
+
+
+          <div id="result" style="display: none">
+
+            <h1 class="inputAuto centre "> { Resultat } </h1>
+
+
+            <table class="table">
+              <thead>
+                <tr>
+
+                  <th>erreur</th>
+                  <th>Bonne réponces</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-warning">
+
+                  <td class="text-danger" id="erreur"></td>
+                  <td class="text-success" id="pointsUn"></td>
+                </tr>
+
+              </tbody>
+            </table>
+
+
+            <p class="teteUn">Les passege Code permis ce font 2 Fois par semaine selon la demande une prise de rendez-vous et obligatoir Faite
+              un appel Downtown CAB .CO sur votre mobile pour plus de renseignements</p>
+
+
+          </div>
+
+
+          <div style="display: none;" id="prixAuto">
+
+
+            <h1 class="inputAuto"> { Prix } </h1>
+
+
+            <table class="table ">
+              <thead>
+                <tr>
+                  <th class="inputAutoUn">
+                    < Véhicules>
+                  </th>
+                  <th class="inputAutoUn">
+                    < Prix>
+                  </th>
+                  <th class="inputAutoUn">
+                    < PROMOTION>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-warning">
+                  <td> Voiture </td>
+                  <td id="voiture"></td>
+                  <td id="promoUn">-20% </td>
+                </tr>
+                <tr>
+                  <td>MOTO</td>
+                  <td id="moto"></td>
+                  <td id="promo2">-20% </td>
+                </tr>
+                <tr>
+                  <td>Camion</td>
+                  <td id="camion"></td>
+                  <td id="promo3">-20% </td>
+                </tr>
+                <tr>
+                  <td>Bateaux</td>
+                  <td id="bateau"></td>
+                  <td id="promo4">Aucune</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+
+
+            <p class="explication"> Dès votre arriver en villes vous pouvez passer un permis provisoire d’une durée (1 Semaine) pendant cette semaine
+              vous pouvais venir ou Passé un appel Downtown CAB .CO pour vous inscrire à une session chaque semaine nous
+              proposons de 1 à 5 sessions (Selon la demande)
+              <br>
+              <br> Pour avoirs le code : Pour avoirs sont code vous devez répondre a 5 question théorique
+              <br>
+              <br> La conduite : Une fois le code réussie vous conduisez sur un lieux fermer (privée) ci tout ce passe bien on
+              passe à la conduite sur route un Circuit de 10 KLM ( Voiture, Moto )
+              <br>
+              <br> Si vous louper une des étape ci-dessus vous devais attendre 1 heurs et payer 200 $ Pour repassé l’étape que
+              vous avais rater
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="modal-footer bg-dark   ">
+          <button id="btnAutre" type="button" class="btn btn-outline-danger btnAutre" data-dismiss="modal">
+            < Retour>
+          </button>
+
+
+
+          <button id="btnentrainementUn" onclick="autoUn ()" class="btnAutre  btn btn-outline-success " style="display: none; ">
+            < Suivant>
+          </button>
+          <button id="btnentrainement2" onclick="auto2 ()" class="btnAutre  btn btn-outline-success " style="display: none; ">
+            < Suivant>
+          </button>
+          <button id="btnentrainement3" onclick="auto3 ()" class="btnAutre  btn btn-outline-success " style="display: none; ">
+            < Suivant>
+          </button>
+          <button id="btnentrainement4" onclick="auto4 ()" class="btnAutre  btn btn-outline-success " style="display: none; ">
+            < Suivant>
+          </button>
+          <button id="btnentrainement5" onclick="auto5 ()" class="btnAutre  btn btn-outline-success " style="display: none; ">
+            < Suivant>
+          </button>
+          <button id="btnentrainement6" onclick="auto6 ()" class="btnAutre  btn btn-outline-success " style="display: none; ">
+            < Fin>
+          </button>
+          <button id="btnentrainement7" onclick="auto7 ()" class="btnAutre  btn btn-outline-success " style="display: none; ">
+            < Retour>
+          </button>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+ <!-- <div class="jumbotron">
+    <h1 class="display-3 inputAuto"> {Recrutement}</h1>
+    <p class="lead">Downtown CAB .CO Recherche  <br> <ul>
+      <li>chauffeur Taxi , La ralation client sera votre priorité ! Vous aimer la route ce poste et fais pour Vous !  </li>
+      <li> Formateur Auto Moto Camion , Vous êtes pédagogue dans l'âme ce poste et fais pour vous !  </li>
+    </ul></p>
+    
+
+    <ul class="flex">
+      <li>   <a class="inputAuto " style="border: none;  color: #FFE599;  " href="https://eldoradorp.fr">(Eldoradorp)</a></li>
+      <li class="inputAuto "> {Créer par Slimane Hassani}</li>
+    </ul>
+ 
+  </div> -->
+
+  <div style="width: 30%;" class="card bg-dark text-white container-fluid">
+    <h3 class="card-header"> {Prochaine Session permis } </h3>
+    <div class="card-body">
+      <h4 class="card-title">Place disponible </h4>
+      <p class="card-text">10 Places Date : </p>
+     
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Fin Partie auto école -->
+
+  <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+  <!--Partie Taxi -->
+
+  
+
+
+
+
+
+
+
+  <div class="modal" id="taxi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 class="modal-title" id="exampleModalLabel">{TAXI}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+
+            <div id="informationUn">
+
+
+
+                <label class="centre" for="">Votre point de Départ ? </label>
+                <select id="formTaxiUn" class="custom-select">
+                  <option selected>Faites un choix</option>
+                  <option value="1">Ville </option>
+                  <option value="2">Hors Ville </option>
+    
+                </select>
+                <br>
+                <div style="display: none;" id="erreur" class="alert alert-danger" role="alert">
+                  <strong>Erreur</strong>
+                  <p class="alert-link">Le nombre de Kilometre Ne peux être inférieur à 1 !!</p>
+    
+                </div>
+                <div>
+                  <label class="centre " for="">Vous Voyager à plusieurs ? </label>
+                  <select id="formTaxi5" class="custom-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+    
+                  </select>
+                </div>
+    
+                <label for="">ATTENTION NE METTRE QUE LE CHIFFRE AVANT LA VIRGULE </label>
+                <div class="input-group input-group-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">Nombres Kilomètres</span>
+                  </div>
+    
+                  <input id="FormTaxiDeux" type="number" class="form-control" aria-label="Large" placeholder="1 " aria-describedby="inputGroup-sizing-sm">
+                </div>
+    
+    
+    
+    
+              </div>
+    
+              <div class="centre " id="affiTaxi" style="display: none;">
+
+                <h1 class="inputAuto"> (Facture)   </h1>
+    
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr class="table-dark">
+    
+                      <th>Déplacement</th>
+                      <th>Pour </th>
+                      <th>Passager</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="table-dark" style="color: black;">
+    
+                      <td>
+                        <strong id="resultDeux"></strong> $ </td>
+                      <td>
+                        <strong id="resultUn"></strong> Kilomètres</td>
+                      <td>
+                        <strong id="passager"></strong>
+                      </td>
+                      <td>
+                        <strong id="Total"> </strong> $ </td>
+    
+                  </tbody>
+                </table>
+    
+    
+              </div>
+    
+           
+
+
+
+
+        </div>
+        <div class="modal-footer bg-dark">
+          <button style="display: none; border: none;" id="retourDeux" type="button" onclick="backTaxi ()" class="btn btn-outline-danger inputAuto">
+            < Retour>
+          </button>
+          <button style="border: none;" id="formTaxi4" type="button" class="btn btn-outline-warning inputAuto" onClick="CalculeUnTaxi()">
+            ( Suivant ) </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+  <!-- Fin partie taxi  -->
+  <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////:://///
+      //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+  </script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/entrainement.js"></script>
+
+  <script src="js/animationFeu.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://use.fontawesome.com/a0c828b765.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+      (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+          function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+        e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+      }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X', 'auto'); ga('send', 'pageview');
+  </script>
+</body>
+
+</html>
