@@ -140,7 +140,7 @@ textarea {
 
 
 
-    .inputAuto , .modal-title ,.card-header,.card-title,#titre,.btn-carte,.btnAutre{
+    .inputAuto , .modal-title ,.card-header,.card-title,#titre,.btn-carte,.btnAutre,.inputAuto{
         font-family: "police_tire",serif ; 
         font-size: 40px; 
     }
@@ -164,7 +164,33 @@ textarea {
     }
 
 
+    .jumbotron {
+        margin-bottom: -4em;
+        background-size: cover;
+        color:  #FFE599;       
+    }
 
+    .Cerdit li {
+            margin-left: 1em; 
+    }
+
+    .Cerdit button , .Cerdit a  {
+        border: none;
+    }
+
+
+
+    @media screen and (max-width: 640px) {
+        .feu{
+          flex-direction: column; 
+          margin-right: 2em;
+          justify-content: center; 
+        }
+
+        .jumbotron {
+            display: none;
+        }
+      }
 
 
 /* ==========================================================================
