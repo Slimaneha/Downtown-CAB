@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
 
 <body>
   <!--[if lt IE 8]>
@@ -65,9 +68,9 @@
   <!-- Debut Du site feut 1er pages -->
 
 
-  <p class="inputAuto homme display-7"> {Downtown CAB .CO }
+  <p class="inputAuto homme display-7"> {Downtown CAB .CO  } 
     <footer class="blockquote-footer   " style="font-size: 25px;"> Votre liberté et notre métier
-      <cite title="Source Title">Abdel Hassani </cite>
+      <cite title="Source Title">Abdel Hassani </cite> <i class="fas fa-taxi"></i>
     </footer>
   </p>
 
@@ -103,8 +106,8 @@
           < Auto école>
         </div>
         <div class="card-body">
-          <h4 class="card-title"> { Peur de ne pas reussir }</h4>
-          <p class="card-text">Parter avec une longueur d'avance avec nos test d'entraînements et nos cours gratuit en ligne ! </p>
+          <h4 class="card-title"> { Validé le code en ligne }</h4>
+          <p class="card-text"> Tout les information sur les pemris sont ici vous pouvez avoir le code en ligne en 5 minutes ! </p>
         </div>
         <button type="button" data-toggle="modal" data-target="#autoEcole" class=" btn-carte inputAuto   btn btn-outline-warning">
           < Accédez>
@@ -153,10 +156,7 @@
       <div class="modal-content">
         <div class="modal-header bg-dark ">
           <h5 class="modal-title " id="exampleModalLabel"> { Auto école } </h5>
-          <br>
-          <p id="points" style="display: none; color: white !important ; ">Points :
-            <strong id="Points"> </strong>
-          </p>
+
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
@@ -169,10 +169,11 @@
           <div id="autoUn">
 
             <ul id="listeGeneral" class="flex" style="flex-direction: column;">
-              <li> Répondez a des questions d'entrainement
+              <li> Passé votre code en ligne Répondez à 5 Question
+                <br>«  Attention une seule erreur et acceptez »
                 <br>
-                <button class="btn btn-outline-dark btn-carte" onclick="entrainement ()">
-                  < Entrainement>
+                <button class="btn btn-outline-dark btn-carte" onclick="user ()">
+                  < Votre code en ligne>
                 </button>
               </li>
               <li> Tout les prix et forfait
@@ -197,77 +198,96 @@
 
           <!--Fin 1er partie -->
 
+          <div id="result" style="display: none" >
+
+              <h1 class="inputAuto centre "> { Resultat } </h1>
+
+              <ul>
+                <li> Nom : <strong id="name"></strong></li>
+                <li> Pernon : <strong id="nameDeux"></strong></li>
+              </ul>
+  
+  
+              <div class="alert alert-success" role="alert">
+                <strong>Vous avais terminé</strong> Voilà votre code :
+                <strong id="code"> </strong>
+                faite une capture d'écran et envoyer le par E-mail à AbdelHassani@discord.gg
+              </div>
+  
+  
+              <p class="teteUn alert alert-success" role="alert">
+                  <strong>Félicitation</strong> Vous avais terminé le code pour savoirs ci vous l'avais optenue envoyer une capture d'écran et envoyer à l'addres  mail suivant <Abdelhassani@discord class="GG"></Abdelhassani@discord>
+                  Vous donnera la bonne ou la mauvaise nouvelle ! 
+
+              </p>
+  
+  
+            </div>
 
 
-          <!--Debut partie 2 entrainement au code -->
+        </div>
 
+     
 
+       
+          <div id="user" style="display: none;background-color: #FFE599">
 
+            <h1 class="inputAuto"> < Vos information  >  </h1>
 
-          <div id="entrainement" style="display: none;">
-
-            <h4 class="inputAuto"> {Question} </h4>
-            <br>
-
-            <strong style="width: 100%;" id="question"> </strong>
-
-
-            <ul class="listeRep">
-              <li class="bg-danger">A:
-                <strong id="reponcesUn"></strong>
-              </li>
-              <li class="bg-warning">B:
-                <strong id="reponces2"></strong>
-              </li>
-              <li class="bg-success">C:
-                <strong id="reponces3"></strong>
-              </li>
-            </ul>
-
-            <form>
-              <label class="inputAuto"> [Mettre Uniquement la lettre A B ou C ] </label>
-              <input id="formAuto" class="form-control form-control-lg" type="text" placeholder="A B C">
-
-            </form>
-
-
-
-
-
-
+            <cite class= "text-danger"> Bienvenu Au code Vous devais repondre à 5 question <br>   <strong>Attention , Pour validez votre code vous devais suivre les étapes à la fin </strong></cite>
+            
+                
+               <br>      <label class=" inputAuto"> (Votre Nom)</label>
+                  <input id="userUn" type="text" class="form-control " aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="   Nom">
+                
+      
+              
+                 
+                  <label class=" inputAuto">  (Votre pernom) </label>
+                  <input  id="user2" type="text" class="form-control" style="margin-top: 1em; " aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Pernom">
+               
+      
+          
           </div>
+        
+        
 
 
 
-          <div id="result" style="display: none">
-
-            <h1 class="inputAuto centre "> { Resultat } </h1>
+        <!--Debut partie 2 entrainement au code -->
 
 
-            <table class="table">
-              <thead>
-                <tr>
-
-                  <th>erreur</th>
-                  <th>Bonne réponces</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="table-warning">
-
-                  <td class="text-danger" id="erreur"></td>
-                  <td class="text-success" id="pointsUn"></td>
-                </tr>
-
-              </tbody>
-            </table>
 
 
-            <p class="teteUn">Les passege Code permis ce font 2 Fois par semaine selon la demande une prise de rendez-vous et obligatoir Faite
-              un appel Downtown CAB .CO sur votre mobile pour plus de renseignements</p>
+        <div id="entrainement" style="display: none;">
+
+          <h4 class="inputAuto"> {Question} </h4>
+          <br>
+
+          <strong style="width: 100%;" id="question"> </strong>
 
 
-          </div>
+
+
+          <form>
+            <select id="formAuto" class="custom-select">
+
+              <option id="a" value="">One</option>
+              <option id="b" value="">Two</option>
+              <option id="c" value="">Three</option>
+            </select>
+          </form>
+
+
+
+
+
+          
+
+
+
+         
+
 
 
           <div style="display: none;" id="prixAuto">
@@ -317,7 +337,7 @@
 
 
 
-            <p class="explication"> Dès votre arriver en villes vous pouvez passer un permis provisoire d’une durée (1 Semaine) pendant cette semaine
+            <!--   <p class="explication"> Dès votre arriver en villes vous pouvez passer un permis provisoire d’une durée (1 Semaine) pendant cette semaine
               vous pouvais venir ou Passé un appel Downtown CAB .CO pour vous inscrire à une session chaque semaine nous
               proposons de 1 à 5 sessions (Selon la demande)
               <br>
@@ -327,7 +347,7 @@
               passe à la conduite sur route un Circuit de 10 KLM ( Voiture, Moto )
               <br>
               <br> Si vous louper une des étape ci-dessus vous devais attendre 1 heurs et payer 200 $ Pour repassé l’étape que
-              vous avais rater
+              vous avais rater  -->
 
 
 
@@ -356,8 +376,7 @@
             < Retour>
           </button>
 
-
-
+          <button id="entrainementUn" type="button" onclick="entrainement ()" style="display: none;" class=" inputAuto btn btn-outline-warning">  < Validé   ></button>
           <button id="btnentrainementUn" onclick="autoUn ()" class="btnAutre  btn btn-outline-success " style="display: none; ">
             < Suivant>
           </button>
@@ -394,7 +413,7 @@
 
 
 
- <!-- <div class="jumbotron">
+  <!-- <div class="jumbotron">
     <h1 class="display-3 inputAuto"> {Recrutement}</h1>
     <p class="lead">Downtown CAB .CO Recherche  <br> <ul>
       <li>chauffeur Taxi , La ralation client sera votre priorité ! Vous aimer la route ce poste et fais pour Vous !  </li>
@@ -409,7 +428,7 @@
  
   </div> -->
 
-  
+
 
 
 
@@ -431,7 +450,7 @@
 
   <!--Partie Taxi -->
 
-  
+
 
 
 
@@ -451,81 +470,81 @@
         <div class="modal-body">
 
 
-            <div id="informationUn">
+          <div id="informationUn">
 
 
 
-                <label class="centre" for="">Votre point de Départ ? </label>
-                <select id="formTaxiUn" class="custom-select">
-                  <option selected>Faites un choix</option>
-                  <option value="1">Ville </option>
-                  <option value="2">Hors Ville </option>
-    
-                </select>
-                <br>
-                <div style="display: none;" id="erreur" class="alert alert-danger" role="alert">
-                  <strong>Erreur</strong>
-                  <p class="alert-link">Le nombre de Kilometre Ne peux être inférieur à 1 !!</p>
-    
-                </div>
-                <div>
-                  <label class="centre " for="">Vous Voyager à plusieurs ? </label>
-                  <select id="formTaxi5" class="custom-select">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-    
-                  </select>
-                </div>
-    
-                <label for="">ATTENTION NE METTRE QUE LE CHIFFRE AVANT LA VIRGULE </label>
-                <div class="input-group input-group-lg">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-lg">Nombres Kilomètres</span>
-                  </div>
-    
-                  <input id="FormTaxiDeux" type="number" class="form-control" aria-label="Large" placeholder="1 " aria-describedby="inputGroup-sizing-sm">
-                </div>
-    
-    
-    
-    
+            <label class="centre" for="">Votre point de Départ ? </label>
+            <select id="formTaxiUn" class="custom-select">
+              <option selected>Faites un choix</option>
+              <option value="1">Ville </option>
+              <option value="2">Hors Ville </option>
+
+            </select>
+            <br>
+            <div style="display: none;" id="erreur" class="alert alert-danger" role="alert">
+              <strong>Erreur</strong>
+              <p class="alert-link">Le nombre de Kilometre Ne peux être inférieur à 1 !!</p>
+
+            </div>
+            <div>
+              <label class="centre " for="">Vous Voyager à plusieurs ? </label>
+              <select id="formTaxi5" class="custom-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+
+              </select>
+            </div>
+
+            <label for="">ATTENTION NE METTRE QUE LE CHIFFRE AVANT LA VIRGULE </label>
+            <div class="input-group input-group-lg">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Nombres Kilomètres</span>
               </div>
-    
-              <div class="centre " id="affiTaxi" style="display: none;">
 
-                <h1 class="inputAuto"> (Facture)   </h1>
-    
-                <table class="table">
-                  <thead class="thead-dark">
-                    <tr class="table-dark">
-    
-                      <th>Déplacement</th>
-                      <th>Pour </th>
-                      <th>Passager</th>
-                      <th>Total</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="table-dark" style="color: black;">
-    
-                      <td>
-                        <strong id="resultDeux"></strong> $ </td>
-                      <td>
-                        <strong id="resultUn"></strong> Kilomètres</td>
-                      <td>
-                        <strong id="passager"></strong>
-                      </td>
-                      <td>
-                        <strong id="Total"> </strong> $ </td>
-    
-                  </tbody>
-                </table>
-    
-    
-              </div>
-    
-           
+              <input id="FormTaxiDeux" type="number" class="form-control" aria-label="Large" placeholder="1 " aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+
+
+
+          </div>
+
+          <div class="centre " id="affiTaxi" style="display: none;">
+
+            <h1 class="inputAuto"> (Facture) </h1>
+
+            <table class="table">
+              <thead class="thead-dark">
+                <tr class="table-dark">
+
+                  <th>Déplacement</th>
+                  <th>Pour </th>
+                  <th>Passager</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-dark" style="color: black;">
+
+                  <td>
+                    <strong id="resultDeux"></strong> $ </td>
+                  <td>
+                    <strong id="resultUn"></strong> Kilomètres</td>
+                  <td>
+                    <strong id="passager"></strong>
+                  </td>
+                  <td>
+                    <strong id="Total"> </strong> $ </td>
+
+              </tbody>
+            </table>
+
+
+          </div>
+
+
 
 
 
@@ -541,7 +560,7 @@
       </div>
     </div>
   </div>
-  
+
 
 
 
@@ -554,15 +573,25 @@
       //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 
-      <div class="jumbotron " style="margin-top: 2em; background-image: url(img/taxi.jpg); background-repeat: no-repeat; width: 100%;  ">
-        <h1 class="display-3 inputAuto" style="margin-top: 2em;  width: 20%;">{Downtown CAB .CO } </h1>
-        <p class="lead"></p>
-        <hr class="my-2">
-        <ul class="flex Cerdit ">
-          <li><button class="btn btn-outline-dark inputAuto"> < Cerdit  > </button></li>
-          <li><a class="btn btn-outline-dark inputAuto" href="https://www.eldoradorp.fr"> < EldoradorpRp > </a></li>
-        </ul>
-      </div>
+  <div class="jumbotron " style="margin-top: 2em; background-image: url(img/taxi.jpg); background-repeat: no-repeat; width: 100%;  ">
+    <h1 class="display-3 inputAuto" style="margin-top: 2em;  width: 90%;">{Downtown CAB .CO } </h1>
+    <p class="lead">
+      <ul class="flex Cerdit ">
+        <li>
+          <button class="btn btn-warning inputAuto">
+            < Cerdit>
+          </button>
+        </li>
+        <li>
+          <a class="btn btn-warning inputAuto" href="https://www.eldoradorp.fr">
+            < EldoradorpRp>
+          </a>
+        </li>
+      </ul>
+    </p>
+
+
+  </div>
 
 
 

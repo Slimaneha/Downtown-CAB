@@ -178,6 +178,14 @@ textarea {
         border: none;
     }
 
+    .input-group,.user {
+        margin-top: 1em;
+        background-color: #FFE599;
+    }
+
+    .btn {
+        border: none;
+    }
 
 
     @media screen and (max-width: 640px) {
